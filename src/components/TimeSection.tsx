@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { format } from 'date-fns';
+
+import useRealTime from '@/hooks/useRealTime';
+
 import ButtonLink from './links/ButtonLink';
 
 type TimeSectionProps = {
@@ -15,6 +18,8 @@ export default function TimeSection({
 }: TimeSectionProps) {
   const cleanDate = dateTime && format(new Date(dateTime), 'kk:mm:ss O');
 
+  const realTime = useRealTime();
+
   return (
     <section className='bg-dark'>
       <div className='layout text-white flex justify-center min-h-screen flex-col items-center'>
@@ -26,6 +31,11 @@ export default function TimeSection({
         <ButtonLink className='mt-8' href='/'>
           Back to Home
         </ButtonLink>
+      </div>
+
+      <div className='text-sm text-right absolute right-4 bottom-4 font-medium'>
+        <p className='text-white'>Real Time:</p>
+        <p className='text-primary-400'>{realTime}</p>
       </div>
     </section>
   );
