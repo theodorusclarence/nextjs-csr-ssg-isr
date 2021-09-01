@@ -20,7 +20,7 @@ export default function HomePage() {
               Demo of Next.js rendering type using time API.
             </p>
 
-            <div className='flex flex-col space-y-2 mt-4'>
+            <div className='flex items-center flex-col space-y-2 mt-4'>
               <CustomLink href='/render/csr'>CSR</CustomLink>
               <CustomLink href='/render/ssr'>SSR</CustomLink>
               <CustomLink href='/render/ssg'>SSG</CustomLink>

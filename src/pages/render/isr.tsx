@@ -19,7 +19,7 @@ export default function ISRPage({ dateTime }: ISRPageProps) {
       <main>
         <TimeSection
           title='ISR'
-          description='If you visit after the revalidate time (5s), your next visit will trigger fetch.'
+          description='If you visit after the revalidate time (5s), your next full refresh visit will trigger fetch.'
           dateTime={dateTime}
         />
       </main>
