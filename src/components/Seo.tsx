@@ -2,12 +2,11 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  site_name: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    ' A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  url: 'https://theodorusclarence.com',
-  image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+  title: 'Next.js Render Type',
+  site_name: 'Next.js Render Type',
+  description: 'A demo to differentiate CSR, SSR, SSG, and ISR',
+  url: 'https://next-render.theodorusclarence.com',
+  image: 'https://next-render.theodorusclarence.com/favicon/large-og.jpg',
   type: 'website',
   robots: 'follow, index',
 };
