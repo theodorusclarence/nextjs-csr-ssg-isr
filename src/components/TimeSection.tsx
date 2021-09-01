@@ -4,6 +4,7 @@ import { format } from 'date-fns';
 import useRealTime from '@/hooks/useRealTime';
 
 import ButtonLink from './links/ButtonLink';
+import CustomLink from './links/CustomLink';
 
 type TimeSectionProps = {
   dateTime: string | undefined;
@@ -22,18 +23,25 @@ export default function TimeSection({
 
   return (
     <section className='bg-dark'>
-      <div className='layout text-white flex justify-center min-h-screen flex-col items-center'>
+      <div className='flex flex-col items-center justify-center min-h-screen text-center text-white layout'>
         <h1>{title}</h1>
-        <p className='text-gray-300 mt-2'>{description}</p>
-        <h2 className='text-5xl md:text-6xl mt-8 text-primary-400'>
+        <p className='mt-2 text-gray-300'>{description}</p>
+        <h2 className='mt-8 text-5xl md:text-6xl text-primary-400'>
           {cleanDate ? cleanDate : 'LOADING...'}
         </h2>
         <ButtonLink className='mt-8' href='/'>
           Back to Home
         </ButtonLink>
+
+        <footer className='absolute text-gray-500 bottom-2'>
+          © {new Date().getFullYear()} By{' '}
+          <CustomLink href='https://theodorusclarence.com?ref=tsnextstarter'>
+            Theodorus Clarence
+          </CustomLink>
+        </footer>
       </div>
 
-      <div className='text-sm text-right absolute right-4 bottom-4 font-medium'>
+      <div className='absolute text-sm font-medium text-right right-4 bottom-8 sm:bottom-4'>
         <p className='text-white'>Real Time:</p>
         <p className='text-primary-400'>{realTime}</p>
       </div>

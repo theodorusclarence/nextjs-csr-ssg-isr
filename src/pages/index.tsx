@@ -39,7 +39,7 @@ export default function HomePage() {
             </footer>
           </div>
 
-          <div className='absolute text-sm font-medium text-right right-4 bottom-4'>
+          <div className='absolute text-sm font-medium text-right right-4 bottom-8 sm:bottom-4'>
             <p className='text-white'>Real Time:</p>
             <p className='text-primary-400'>{realTime}</p>
           </div>
