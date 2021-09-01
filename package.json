@@ -15,7 +15,9 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^10.3.3",
+    "axios": "^0.21.1",
     "clsx": "^1.1.1",
+    "date-fns": "^2.23.0",
     "next": "^11.1.0",
     "postcss": "^8.3.6",
     "react": "^17.0.2",
