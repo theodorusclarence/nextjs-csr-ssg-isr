@@ -1,9 +1,12 @@
 import * as React from 'react';
 
+import useRealTime from '@/hooks/useRealTime';
+
 import Seo from '@/components/Seo';
 import CustomLink from '@/components/links/CustomLink';
 
 export default function HomePage() {
+  const realTime = useRealTime();
   return (
     <>
       <Seo templateTitle='Home' />
@@ -33,6 +36,11 @@ export default function HomePage() {
                 Theodorus Clarence
               </CustomLink>
             </footer>
+          </div>
+
+          <div className='text-sm text-right absolute right-4 bottom-4 font-medium'>
+            <p className='text-white'>Real Time:</p>
+            <p className='text-primary-400'>{realTime}</p>
           </div>
         </section>
       </main>
