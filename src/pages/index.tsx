@@ -23,11 +23,12 @@ export default function HomePage() {
               Demo of Next.js rendering type using time API.
             </p>
 
-            <div className='flex items-center flex-col space-y-2 mt-4'>
+            <div className='flex flex-col items-center mt-4 space-y-2'>
               <CustomLink href='/render/csr'>CSR</CustomLink>
               <CustomLink href='/render/ssr'>SSR</CustomLink>
               <CustomLink href='/render/ssg'>SSG</CustomLink>
               <CustomLink href='/render/isr'>ISR</CustomLink>
+              <CustomLink href='/render/isr-20'>ISR 20s</CustomLink>
             </div>
 
             <footer className='absolute text-gray-500 bottom-2'>
@@ -38,7 +39,7 @@ export default function HomePage() {
             </footer>
           </div>
 
-          <div className='text-sm text-right absolute right-4 bottom-4 font-medium'>
+          <div className='absolute text-sm font-medium text-right right-4 bottom-4'>
             <p className='text-white'>Real Time:</p>
             <p className='text-primary-400'>{realTime}</p>
           </div>
