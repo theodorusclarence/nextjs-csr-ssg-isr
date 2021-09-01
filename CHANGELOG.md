@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/theodorusclarence/nextjs-csr-ssg-isr/compare/v0.1.0...v0.1.1) (2021-09-01)
+
+
+### Features
+
+* add footer to each page ([72d8ac9](https://github.com/theodorusclarence/nextjs-csr-ssg-isr/commit/72d8ac91f13a907fbd49c4ed95ce0e44ae0e5633))
+
 ## 0.1.0 (2021-09-01)
 
 
